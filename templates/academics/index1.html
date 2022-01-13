@@ -1,7 +1,5 @@
 <!doctype html>
 <html lang="en">
-    {% load staticfiles %}
-
   <head>
     <title>Title</title>
     <!-- Required meta tags -->
@@ -12,29 +10,30 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-   <div class="container">
+      
+    <div class="container">
         <div class="row">
             <div  class="col-md-12">
-                <h1 class="text-center text-white bg-danger">student information</h1>
+                <h1 class="text-center text-white bg-danger">student academics</h1>
                 <br>
                 <table class="table table-bordered table-striped table-hover table-dark">
                     <tr>
                         <th>studentrollno</th>
-                        <th>studentname</th>
-                        <th>studentclass</th>
-                        <th>school</th>
-                        <th>mobile</th>
-                        <th>address</th>
+                        <th>maths</th>
+                        <th>physics</th>
+                        <th>chemistry</th>
+                        <th>biology</th>
+                        <th>english</th>
                         
                     </tr>
                     {% for d in data %}
                     <tr>
                         <td>{{d.studentrollno}}</td>
-                        <td>{{d.studentname}}</td>
-                        <td>{{d.studentclass}}</td>
-                        <td>{{d.school}}</td>
-                        <td>{{d.mobile}}</td>
-                        <td>{{d.address}}</td>
+                        <td>{{d.maths}}</td>
+                        <td>{{d.physics}}</td>
+                        <td>{{d.chemistry}}</td>
+                        <td>{{d.biology}}</td>
+                        <td>{{d.english}}</td>
                         
  
                     </tr>
@@ -46,6 +45,7 @@
     </div>
   
     
+
 
 
 
